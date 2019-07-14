@@ -144,3 +144,51 @@ function confirm(con){
     `
     return confirmationForm;
 }
+
+
+//how I want to correct my code to work properly. I understood that in chat.html couldn't be 3 form submit
+
+//<body>
+//
+// 		 <p id="messegeForForm"></p>
+// 		 <p id="buttonCount"></p>
+// 		 <div id="users"></div>
+//
+// 		 <script src="/socket.io/socket.io.js"></script>
+// 		 <script>
+// 			 let socket = io.connect();
+//
+// 			 //Once we're connected, display the user ID on the webpage
+// 			 socket.on('connect', function(){
+// 			  	document.getElementById("messegeForForm").innerHTML = "I want coffee";
+// 			 });
+//
+//
+//
+// 			 //what to do when the server tells this user their button was clicked by any of the users
+// 			 socket.on('coffeeWish', function(){
+// 				 //console.log('clicked');
+//
+// 				 document.getElementById("buttonCount").innerHTML = "Who will join?';
+// 			 });
+//
+// 			 //Add a button for each user that is connected to the server
+// 			 socket.on('userList', function(data){
+// 				 document.getElementById("users").innerHTML = "";
+// 				 for(var i = 0; i < data.length; i++){
+// 					 //console.log(data[i]);
+// 					 var btn = document.createElement("BUTTON");
+// 					 btn.onclick = userButtonClicked;
+// 					 var textnode = document.createTextNode(data[i]);
+// 					 btn.appendChild(textnode);
+// 					 document.getElementById("users").appendChild(btn);
+// 				 }
+// 			 });
+//
+// 			 //When any of the user buttons on this page are clicked
+// 			 function userButtonClicked(){
+// 				 //Tell the server this button was clicked and send to the user the message
+// 				 socket.emit('coffeeWish', this.innerHTML);
+// 			 }
+// 		</script>
+//    </body>
