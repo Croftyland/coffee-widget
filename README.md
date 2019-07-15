@@ -31,10 +31,12 @@ It will work correctly if there will be only one input-form in:
 ## Learn More
 
 Here you can create:
+
  ✅ your workspace(Ws) and rooms in folder ```/data/data.js```  
  
  ✅ create your users
  
  ✅ chat with them
+ 
  🔴  not finished lazy talks yet (with duplicating whole dialog)
 
